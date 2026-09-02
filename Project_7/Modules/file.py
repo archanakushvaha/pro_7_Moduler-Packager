@@ -15,7 +15,7 @@ def file_menu():
         ch = input("Enter Choice : ")
 
         if ch == "1":
-            file = open("Data/sample.txt","r")
+            file = open("Data/Sample.txt","r")
 
             print(file.read())
 
@@ -24,7 +24,8 @@ def file_menu():
             print("\n-----------------------------------------------------")
 
         elif ch =="2":
-            file = open("Data/sample.txt","a")
+            text = input("Enter Your Message :")
+            file = open("Data/Sample.txt","a")
 
             file.write(text + "\n")
 
